@@ -1,0 +1,31 @@
+{
+  "title_id": "04007EF01F8AE000",
+  "build_id": "DB93B0125F4850601D61C3EDDE012F8EB2ECFE77",
+  "source_sha256": "0d3780b1cc70a48d46343dce05d26da535799faa096cf666e7841bc25fc6a20c",
+  "sites": [
+    {
+      "module_address": "0x5d18c",
+      "ips_offset": "0x5d28c",
+      "original": "f603042a",
+      "replacement": "36008052",
+      "before": "mov w22, w4",
+      "after": "mov w22, #1"
+    },
+    {
+      "module_address": "0x7bf1ac",
+      "ips_offset": "0x7bf2ac",
+      "original": "c9038052",
+      "replacement": "89078052",
+      "before": "mov w9, #0x1e",
+      "after": "mov w9, #0x3c"
+    }
+  ],
+  "patch_sha256": "f233c0b3dc046db9ecab8c85e072b2d6fc86a431de8918effbefa236ca3a66e2",
+  "instructions_and_ips_layout_verified": true,
+  "gameplay_tested": true,
+  "patch_version": "1.0",
+  "mod_folder": "60FPS-v1.0",
+  "game_version": "1.1.0",
+  "gameplay_validation": "Limited user testing; no precise animation duration comparison or full playthrough.",
+  "full_playthrough_tested": false
+}

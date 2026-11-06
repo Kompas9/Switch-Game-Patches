@@ -1,0 +1,19 @@
+{
+  "game": "Tomodachi Life: Living the Dream",
+  "version": "1.0.4",
+  "title_id": "010051F0207B2000",
+  "build_id": "B39FEF373FB12154385D012AAB3BC99EF2944470000000000000000000000000",
+  "main_dump_sha256": "eda1d626886bb495941ae44a69622d6285c05bd4519cb43191a1c4ff2d8f58a0",
+  "source": "https://github.com/masagrator/FPSLocker-Warehouse/blob/a86325bb0d298fb99293fa009c613dc71636d316/OTHER_WAYS.md",
+  "cheat_entry_unchanged": true,
+  "cheat_sha256": "f2085aa7e6f8378f43ec473a19cd13e50186d102c6a7c2876c34e8b52f3bd36b",
+  "input_build_matches": true,
+  "static_pointer_and_rate_control_review": true,
+  "gameplay_tested": true,
+  "painting_transition_measured": false,
+  "package_version": "1.0",
+  "mod_folder": "Tomodachi-60FPS-v1.0",
+  "gameplay_validation": "User reports the local package works correctly; no new patched log or full playthrough reviewed.",
+  "third_party_cheat": true,
+  "upstream_cheat_unchanged": true
+}

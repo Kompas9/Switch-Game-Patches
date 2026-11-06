@@ -1,19 +1,23 @@
-# v1.0 — 60 FPS unlock with timing adjustment
+# v1.1 - Shared Switch game patch collection
 
-Initial release for **Fire Emblem: Fortune's Weave 1.1.0**.
+The repository is now **Switch-Game-Patches**, covering Switch and Switch 2 games.
+The Fire Emblem v1.0 release is preserved.
 
-- Uses presentation interval 1 and changes the game's timing-rate initialization
-  from 30 to 60. Includes the timing adjustment absent from the first experiment.
-- User testing reported correct-looking battle speed, video and audio, including
-  gameplay below 60 FPS. This is limited testing, not a full-playthrough guarantee.
-- Does not guarantee 60 FPS; performance depends on the emulator, settings and hardware.
+## Included game packages
 
-**Install:** extract the ZIP, right-click the game → Open Mod Data Location,
-and copy `60FPS-v1.0` there. Enable it in Properties / Add-Ons if necessary.
-Disable earlier FPS test mods first. Keep emulator speed at 100%.
+- **Fire Emblem: Fortune's Weave 1.1.0 - patch v1.0:** unchanged tested FPS unlock
+  plus timing-rate adjustment. The downloadable Fire Emblem ZIP is identical
+  to the original release.
+- **Tomodachi Life: Living the Dream 1.0.4 - package v1.0:** adds the existing
+  exact-build **60 FPS Max** cheat from masagrator's FPSLocker-Warehouse.
+  Cheat contents are unchanged from the local package the user reported working.
+  Full source credit and build details are included; this is not a new authored cheat.
 
-**Supported Title ID:** `04007EF01F8AE000`  
-**Main Build ID:** `DB93B0125F4850601D61C3EDDE012F8EB2ECFE77`
+Download the ZIP for your game. Stop the game, open its mod data location and
+copy the ZIP's mod folder there. Enable in Properties / Add-Ons, disable earlier
+FPS test mods, and keep emulator speed at 100%. Install patches separately into
+the corresponding games' mod locations. Neither game requires an emulator rebuild.
 
-See the README for exact folder layout, verification, removal and limitations.
-The download contains only the IPS patch, metadata and documentation.
+Read each game's README for supported Build IDs, removal and testing limits.
+Testing is limited; 60 FPS and correct timing in all scenes are not guaranteed.
+No game executables, assets, keys, firmware, logs or saves are included.
