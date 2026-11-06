@@ -1,23 +1,25 @@
-# v1.1 - Shared Switch game patch collection
+# v1.2 - Fire Emblem 3440x1440 ultrawide fix
 
-The repository is now **Switch-Game-Patches**, covering Switch and Switch 2 games.
-The Fire Emblem v1.0 release is preserved.
+Adds **Fire Emblem: Fortune's Weave ultrawide v1.0** for game **1.1.0**:
 
-## Included game packages
+- Wider 43:18 perspective camera for 3440x1440 output.
+- Centered 16:9 UI proportions and matching UI clipping correction.
+- Centered 16:9 movies with opaque-black side bars and viewport restoration.
 
-- **Fire Emblem: Fortune's Weave 1.1.0 - patch v1.0:** unchanged tested FPS unlock
-  plus timing-rate adjustment. The downloadable Fire Emblem ZIP is identical
-  to the original release.
-- **Tomodachi Life: Living the Dream 1.0.4 - package v1.0:** adds the existing
-  exact-build **60 FPS Max** cheat from masagrator's FPSLocker-Warehouse.
-  Cheat contents are unchanged from the local package the user reported working.
-  Full source credit and build details are included; this is not a new authored cheat.
+All three user-tested aspect components are combined into **one mod folder**.
+The merged patch image is byte-identical to applying those components separately.
+Limited user testing and offline execution checks are recorded; this is not a
+full-playthrough guarantee.
 
-Download the ZIP for your game. Stop the game, open its mod data location and
-copy the ZIP's mod folder there. Enable in Properties / Add-Ons, disable earlier
-FPS test mods, and keep emulator speed at 100%. Install patches separately into
-the corresponding games' mod locations. Neither game requires an emulator rebuild.
+**Install:** disable/remove earlier camera TEST, UI-TEST2/UI-TEST3 and MOVIE-TEST1
+folders. Copy `Ultrawide-3440x1440-v1.0` into the game's Mod Data Location and
+enable it. Use **Stretch to Window**, 3440x1440 output and 100% emulator speed.
+The existing **60 FPS mod stays separate and can remain enabled**.
 
-Read each game's README for supported Build IDs, removal and testing limits.
-Testing is limited; 60 FPS and correct timing in all scenes are not guaranteed.
-No game executables, assets, keys, firmware, logs or saves are included.
+**Title ID:** `04007EF01F8AE000`
+
+**Main Build ID:** `DB93B0125F4850601D61C3EDDE012F8EB2ECFE77`
+
+See the Fire Emblem ULTRAWIDE.md guide for supported settings and limitations.
+Fire Emblem's FPS package and Tomodachi's credited FPS package are unchanged.
+No emulator rebuild, executable dump, game assets, keys, firmware or saves included.

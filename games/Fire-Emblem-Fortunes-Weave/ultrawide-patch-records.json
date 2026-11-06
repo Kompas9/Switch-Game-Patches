@@ -1,0 +1,173 @@
+{
+  "package_version": "1.0",
+  "target": "3440x1440 (43:18)",
+  "title_id": "04007EF01F8AE000",
+  "game_version": "1.1.0",
+  "build_id": "DB93B0125F4850601D61C3EDDE012F8EB2ECFE77",
+  "input_decompressed_nso_sha256": "0d3780b1cc70a48d46343dce05d26da535799faa096cf666e7841bc25fc6a20c",
+  "format": "IPS32",
+  "patch_sha256": "8346b77aad2f4130c8611358a040c7f344b5382d307e6da03520cef43ed4531f",
+  "components": [
+    {
+      "component": "camera",
+      "patch_sha256": "40c748dfd732c8567a4367691fa1a76a9074da38d6d80d09437468e918be17ca",
+      "user_reported_working": true
+    },
+    {
+      "component": "UI and clipping",
+      "patch_sha256": "cb273129133cbda8bc0fea33ee51cca1c45d1c731c904b1574f58eb3c0ea0fd3",
+      "user_reported_working": true
+    },
+    {
+      "component": "movies",
+      "patch_sha256": "f7699e4c6fe847f454f542b938bc0a19c036240088a20175c79e6999df1b8169",
+      "user_reported_working": true
+    }
+  ],
+  "merged_record_count": 23,
+  "merged_bytes_equal_separate_patches": true,
+  "no_overlapping_records": true,
+  "fps_patch_included": false,
+  "testing": "User reported camera, UI/clipping and movie components working. Combined image verified identical to applying those three components separately; no full playthrough or separate combined-mod gameplay run.",
+  "full_playthrough_tested": false,
+  "records": [
+    {
+      "component": "UI and clipping",
+      "address": "0x574564",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "1f01096ba100005408cc86526849a772081000b91f2003d5c0035fd6"
+    },
+    {
+      "component": "UI and clipping",
+      "address": "0x574924",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "c8e2ffb5081c40b908791f5368e2ff35084c40b909f0a7520affff17"
+    },
+    {
+      "component": "UI and clipping",
+      "address": "0x5749c4",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "c93a9752495ea772087900121f01096b41ddff54084041f8d2ffff17"
+    },
+    {
+      "component": "UI and clipping",
+      "address": "0x5760a4",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "081040b9291191520951a7721f01096b4126ff54082440b942faff17"
+    },
+    {
+      "component": "UI and clipping",
+      "address": "0x576a10",
+      "original": "c0035fd6",
+      "replacement": "a5fdff17"
+    },
+    {
+      "component": "UI and clipping",
+      "address": "0x593424",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "12102c1e520c121f485f9052c8e7a7721301271e432400141f2003d5"
+    },
+    {
+      "component": "UI and clipping",
+      "address": "0x5976d4",
+      "original": "6438251e",
+      "replacement": "340e0014"
+    },
+    {
+      "component": "UI and clipping",
+      "address": "0x59afa4",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "281040b909cc86526949a7721f01096be1ac00541be1ff171f2003d5"
+    },
+    {
+      "component": "UI and clipping",
+      "address": "0x59c544",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "a538321ea548131fe708331e6438251e61ecff171f2003d51f2003d5"
+    },
+    {
+      "component": "camera",
+      "address": "0xb51244",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "080c40b968070035083840f90930a8d20922e8f21f0109eb32000014"
+    },
+    {
+      "component": "camera",
+      "address": "0xb51324",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "810000548845a8d20832e8f2083800f9000445ad43000014"
+    },
+    {
+      "component": "camera",
+      "address": "0xb51440",
+      "original": "000445ad",
+      "replacement": "81ffff17"
+    },
+    {
+      "component": "movies",
+      "address": "0x18f2184",
+      "original": "0000000000000000",
+      "replacement": "00013fd6554a0014"
+    },
+    {
+      "component": "movies",
+      "address": "0x18f2784",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "600240f9e1031f2ae2031f2ae3134029080040f9082540f97afeff17"
+    },
+    {
+      "component": "movies",
+      "address": "0x18f2d64",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "600240f961008052e2031f2a080040f9088940f900013fd682feff17"
+    },
+    {
+      "component": "movies",
+      "address": "0x18f30c4",
+      "original": "0000000000000000000000000000000000000000",
+      "replacement": "080040f9082540f900013fd6600640f9a3460014"
+    },
+    {
+      "component": "movies",
+      "address": "0x18f7ac4",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "2309ca1a891240b92101034b217c0153e2031f2a600240f97aedff17"
+    },
+    {
+      "component": "movies",
+      "address": "0x18ffe64",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "8a6c1c53690c030b3f010a6b0193f954ff7f00a908f0a752d2300014"
+    },
+    {
+      "component": "movies",
+      "address": "0x1904b5c",
+      "original": "600640f9",
+      "replacement": "02030014"
+    },
+    {
+      "component": "movies",
+      "address": "0x1904c20",
+      "original": "600240f9",
+      "replacement": "51b8ff17"
+    },
+    {
+      "component": "movies",
+      "address": "0x1905764",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "83124229e31300297f0000710dcbf6549f000071cdcaf654bae9ff17"
+    },
+    {
+      "component": "movies",
+      "address": "0x190c1c4",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "e80f00b9600240f9e1031f2ae2030091080040f9084940f9fa130014"
+    },
+    {
+      "component": "movies",
+      "address": "0x19111c4",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "00013fd683124229e313002969681b53295500116a0580523a9aff17"
+    }
+  ]
+}
