@@ -11,7 +11,14 @@ version, installation instructions, testing notes and credits.
 | [Fire Emblem: Fortune's Weave](games/Fire-Emblem-Fortunes-Weave) | Switch 2 | 1.1.0 | v1.0 | 60 FPS presentation unlock plus timing-rate adjustment. |
 | [Tomodachi Life: Living the Dream](games/Tomodachi-Life-Living-the-Dream) | Switch | 1.0.4 | v1.0 | Existing exact-build 60 FPS Max cheat from masagrator's FPSLocker-Warehouse, packaged unchanged. |
 
-**Download individual game ZIPs from [Releases](https://github.com/Kompas9/Switch-Game-Patches/releases).**
+## Download ZIPs
+
+- **[Fire Emblem - 60 FPS v1.0](https://github.com/Kompas9/Switch-Game-Patches/raw/refs/heads/main/downloads/Fire-Emblem-Fortunes-Weave-60FPS-v1.0.zip)** - game version 1.1.0.
+- **[Tomodachi - 60 FPS v1.0](https://github.com/Kompas9/Switch-Game-Patches/raw/refs/heads/main/downloads/Tomodachi-Life-Living-the-Dream-60FPS-v1.0.zip)** - game version 1.0.4.
+- [SHA256 checksums](downloads/Switch-Game-Patches-v1.1-SHA256.txt).
+
+ZIPs are also available from [Releases](https://github.com/Kompas9/Switch-Game-Patches/releases).
+
 Release `v1.1` adds Tomodachi and the shared repository layout. Each game package
 remains v1.0. Historical release `v1.0` contains the original Fire Emblem package.
 
