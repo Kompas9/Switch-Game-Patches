@@ -1,0 +1,6 @@
+__pycache__/
+*.nso
+*.xci
+*.nsp
+*.nup
+*.keys
