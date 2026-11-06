@@ -1,12 +1,12 @@
 {
-  "package_version": "1.0",
+  "package_version": "1.1",
   "target": "3440x1440 (43:18)",
   "title_id": "04007EF01F8AE000",
   "game_version": "1.1.0",
   "build_id": "DB93B0125F4850601D61C3EDDE012F8EB2ECFE77",
   "input_decompressed_nso_sha256": "0d3780b1cc70a48d46343dce05d26da535799faa096cf666e7841bc25fc6a20c",
   "format": "IPS32",
-  "patch_sha256": "8346b77aad2f4130c8611358a040c7f344b5382d307e6da03520cef43ed4531f",
+  "patch_sha256": "c61aac1722e2ac2923c33f2dbf5097655dd2196f9d2f199940ccb9faf2c90163",
   "components": [
     {
       "component": "camera",
@@ -22,152 +22,376 @@
       "component": "movies",
       "patch_sha256": "f7699e4c6fe847f454f542b938bc0a19c036240088a20175c79e6999df1b8169",
       "user_reported_working": true
+    },
+    {
+      "component": "world-to-screen marker alignment",
+      "user_reported_working": true
+    },
+    {
+      "component": "2D menu-effect projection and clipping",
+      "user_reported_working": true
     }
   ],
-  "merged_record_count": 23,
-  "merged_bytes_equal_separate_patches": true,
+  "merged_record_count": 71,
   "no_overlapping_records": true,
   "fps_patch_included": false,
-  "testing": "User reported camera, UI/clipping and movie components working. Combined image verified identical to applying those three components separately; no full playthrough or separate combined-mod gameplay run.",
+  "testing": "User confirmed world-marker alignment and UI-Effects-TEST1 working. 91 world-coordinate and 18 scoped 2D-effect ARM64 checks passed. Limited visual testing; no full playthrough. Torch-light flicker reported across emulator versions, including without ultrawide; unresolved and not fixed by this patch.",
   "full_playthrough_tested": false,
   "records": [
     {
-      "component": "UI and clipping",
       "address": "0x574564",
       "original": "00000000000000000000000000000000000000000000000000000000",
       "replacement": "1f01096ba100005408cc86526849a772081000b91f2003d5c0035fd6"
     },
     {
-      "component": "UI and clipping",
       "address": "0x574924",
       "original": "00000000000000000000000000000000000000000000000000000000",
       "replacement": "c8e2ffb5081c40b908791f5368e2ff35084c40b909f0a7520affff17"
     },
     {
-      "component": "UI and clipping",
       "address": "0x5749c4",
       "original": "00000000000000000000000000000000000000000000000000000000",
       "replacement": "c93a9752495ea772087900121f01096b41ddff54084041f8d2ffff17"
     },
     {
-      "component": "UI and clipping",
       "address": "0x5760a4",
       "original": "00000000000000000000000000000000000000000000000000000000",
       "replacement": "081040b9291191520951a7721f01096b4126ff54082440b942faff17"
     },
     {
-      "component": "UI and clipping",
       "address": "0x576a10",
       "original": "c0035fd6",
       "replacement": "a5fdff17"
     },
     {
-      "component": "UI and clipping",
       "address": "0x593424",
       "original": "00000000000000000000000000000000000000000000000000000000",
       "replacement": "12102c1e520c121f485f9052c8e7a7721301271e432400141f2003d5"
     },
     {
-      "component": "UI and clipping",
       "address": "0x5976d4",
       "original": "6438251e",
       "replacement": "340e0014"
     },
     {
-      "component": "UI and clipping",
       "address": "0x59afa4",
       "original": "00000000000000000000000000000000000000000000000000000000",
       "replacement": "281040b909cc86526949a7721f01096be1ac00541be1ff171f2003d5"
     },
     {
-      "component": "UI and clipping",
       "address": "0x59c544",
       "original": "00000000000000000000000000000000000000000000000000000000",
       "replacement": "a538321ea548131fe708331e6438251e61ecff171f2003d51f2003d5"
     },
     {
-      "component": "camera",
       "address": "0xb51244",
       "original": "00000000000000000000000000000000000000000000000000000000",
       "replacement": "080c40b968070035083840f90930a8d20922e8f21f0109eb32000014"
     },
     {
-      "component": "camera",
       "address": "0xb51324",
       "original": "000000000000000000000000000000000000000000000000",
       "replacement": "810000548845a8d20832e8f2083800f9000445ad43000014"
     },
     {
-      "component": "camera",
       "address": "0xb51440",
       "original": "000445ad",
       "replacement": "81ffff17"
     },
     {
-      "component": "movies",
       "address": "0x18f2184",
       "original": "0000000000000000",
       "replacement": "00013fd6554a0014"
     },
     {
-      "component": "movies",
       "address": "0x18f2784",
       "original": "00000000000000000000000000000000000000000000000000000000",
       "replacement": "600240f9e1031f2ae2031f2ae3134029080040f9082540f97afeff17"
     },
     {
-      "component": "movies",
       "address": "0x18f2d64",
       "original": "00000000000000000000000000000000000000000000000000000000",
       "replacement": "600240f961008052e2031f2a080040f9088940f900013fd682feff17"
     },
     {
-      "component": "movies",
       "address": "0x18f30c4",
       "original": "0000000000000000000000000000000000000000",
       "replacement": "080040f9082540f900013fd6600640f9a3460014"
     },
     {
-      "component": "movies",
       "address": "0x18f7ac4",
       "original": "00000000000000000000000000000000000000000000000000000000",
       "replacement": "2309ca1a891240b92101034b217c0153e2031f2a600240f97aedff17"
     },
     {
-      "component": "movies",
       "address": "0x18ffe64",
       "original": "00000000000000000000000000000000000000000000000000000000",
       "replacement": "8a6c1c53690c030b3f010a6b0193f954ff7f00a908f0a752d2300014"
     },
     {
-      "component": "movies",
       "address": "0x1904b5c",
       "original": "600640f9",
       "replacement": "02030014"
     },
     {
-      "component": "movies",
       "address": "0x1904c20",
       "original": "600240f9",
       "replacement": "51b8ff17"
     },
     {
-      "component": "movies",
       "address": "0x1905764",
       "original": "00000000000000000000000000000000000000000000000000000000",
       "replacement": "83124229e31300297f0000710dcbf6549f000071cdcaf654bae9ff17"
     },
     {
-      "component": "movies",
       "address": "0x190c1c4",
       "original": "00000000000000000000000000000000000000000000000000000000",
       "replacement": "e80f00b9600240f9e1031f2ae2030091080040f9084940f9fa130014"
     },
     {
-      "component": "movies",
       "address": "0x19111c4",
       "original": "00000000000000000000000000000000000000000000000000000000",
       "replacement": "00013fd683124229e313002969681b53295500116a0580523a9aff17"
+    },
+    {
+      "address": "0xa7f148",
+      "original": "420c031f",
+      "replacement": "c7e2ff17"
+    },
+    {
+      "address": "0xa77c64",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "fb0f9f3c9b00001c420c1b1ffb07c13c361d00140040a144"
+    },
+    {
+      "address": "0xb81bfc",
+      "original": "2108021f",
+      "replacement": "5a2dff17"
+    },
+    {
+      "address": "0xb4d164",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "fb0f9f3c9b00001c21081b1ffb07c13ca3d200140040a144"
+    },
+    {
+      "address": "0xd939cc",
+      "original": "2108021f",
+      "replacement": "26faff17"
+    },
+    {
+      "address": "0xd92264",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "fb0f9f3c9b00001c21081b1ffb07c13cd70500140040a144"
+    },
+    {
+      "address": "0xd943c4",
+      "original": "2108021f",
+      "replacement": "98220014"
+    },
+    {
+      "address": "0xd9ce24",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "fb0f9f3c9b00001c21081b1ffb07c13c65ddff170040a144"
+    },
+    {
+      "address": "0xd94528",
+      "original": "2108021f",
+      "replacement": "dfd7ff17"
+    },
+    {
+      "address": "0xd8a4a4",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "fb0f9f3c9b00001c21081b1ffb07c13c1e2800140040a144"
+    },
+    {
+      "address": "0xd94670",
+      "original": "2108021f",
+      "replacement": "1dd5ff17"
+    },
+    {
+      "address": "0xd89ae4",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "fb0f9f3c9b00001c21081b1ffb07c13ce02a00140040a144"
+    },
+    {
+      "address": "0xd947b8",
+      "original": "2108021f",
+      "replacement": "fbc9ff17"
+    },
+    {
+      "address": "0xd86fa4",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "fb0f9f3c9b00001c21081b1ffb07c13c023600140040a144"
+    },
+    {
+      "address": "0xd94900",
+      "original": "2108021f",
+      "replacement": "89c8ff17"
+    },
+    {
+      "address": "0xd86b24",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "fb0f9f3c9b00001c21081b1ffb07c13c743700140040a144"
+    },
+    {
+      "address": "0xd94a44",
+      "original": "2108021f",
+      "replacement": "10aeff17"
+    },
+    {
+      "address": "0xd80284",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "fb0f9f3c9b00001c21081b1ffb07c13ced5100140040a144"
+    },
+    {
+      "address": "0xd94b88",
+      "original": "2108021f",
+      "replacement": "cfa5ff17"
+    },
+    {
+      "address": "0xd7e2c4",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "fb0f9f3c9b00001c21081b1ffb07c13c2e5a00140040a144"
+    },
+    {
+      "address": "0xd94ccc",
+      "original": "2108021f",
+      "replacement": "b66bff17"
+    },
+    {
+      "address": "0xd6fba4",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "fb0f9f3c9b00001c21081b1ffb07c13c479400140040a144"
+    },
+    {
+      "address": "0x1912700",
+      "original": "2108021f",
+      "replacement": "d1d1ff17"
+    },
+    {
+      "address": "0x1906e44",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "fb0f9f3c9b00001c21081b1ffb07c13c2c2e00140040a144"
+    },
+    {
+      "address": "0x19131ec",
+      "original": "2108021f",
+      "replacement": "8e5a0014"
+    },
+    {
+      "address": "0x1929c24",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "fb0f9f3c9b00001c21081b1ffb07c13c6fa5ff170040a144"
+    },
+    {
+      "address": "0xb4d004",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "e827bea908423bd5e80b00f9c80240b91f011e7161ef4c54ea410214"
+    },
+    {
+      "address": "0xbdd7c4",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "c80640b91fe11071c1b10454a80359b8291191520951a7721ab2fc17"
+    },
+    {
+      "address": "0xb0a044",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "1f01096be16d6e54a8435ab8c93a9752495ea7721f01096b0a650314"
+    },
+    {
+      "address": "0xbe3484",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "01cc0154a8c35cb80900805209f0a7721f01096b61cb01540296fc17"
+    },
+    {
+      "address": "0xb08ca4",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "a8c359b808791f53c80a6f3509cc86526949a772a90319b852780314"
+    },
+    {
+      "address": "0xbe6e04",
+      "original": "0000000000000000000000000000000000000000",
+      "replacement": "e80b40f908421bd5e827c2a800e4002fb13efe17"
+    },
+    {
+      "address": "0xb768d4",
+      "original": "00e4002f",
+      "replacement": "cc59ff17"
+    },
+    {
+      "address": "0xb04544",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "990340f9e88340b909cc86526949a7721f01096bff8300b912f3ff17"
+    },
+    {
+      "address": "0xb011a4",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "21ba3a54c80240b91f011e71c1b93a54c90640b93fe11071c2fcff17"
+    },
+    {
+      "address": "0xb004c4",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "21213b54e88700b9e98b00b928008052e88300b9a00240f9d2fcff17"
+    },
+    {
+      "address": "0xaff824",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "e04b00f9080040f9082d40f9c11e80520200805283b2805262f7ff17"
+    },
+    {
+      "address": "0xafd5c4",
+      "original": "000000000000000000000000",
+      "replacement": "0487805200013fd6c7e40114"
+    },
+    {
+      "address": "0xb768e4",
+      "original": "990340f9",
+      "replacement": "1837fe17"
+    },
+    {
+      "address": "0xaf8c24",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "e98340b969bffe3441bffe3522bffe357f001e71e1befe54f2f5ff17"
+    },
+    {
+      "address": "0xaf6404",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "9fe0107161000054c11e805283b2805200013fd6e7010214"
+    },
+    {
+      "address": "0xb76bb0",
+      "original": "00013fd6",
+      "replacement": "1d08fe17"
+    },
+    {
+      "address": "0xaf4c04",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "e98340b969a9ff3441a9ff3522a9ff357f001e71e1a8ff5442fdff17"
+    },
+    {
+      "address": "0xaf4124",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "9fe0107161000054c11e805283b2805200013fd6f20a0214"
+    },
+    {
+      "address": "0xb76cfc",
+      "original": "00013fd6",
+      "replacement": "c2f7fd17"
+    },
+    {
+      "address": "0xaf3184",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "e88340b96877fb34e04b40f9080040f9082d40f901008052b2dbff17"
+    },
+    {
+      "address": "0xaea064",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "02008052e38740b9e48b40b900013fd6f44f54a94a330214"
+    },
+    {
+      "address": "0xb76d9c",
+      "original": "f44f54a9",
+      "replacement": "faf0fd17"
     }
   ]
 }

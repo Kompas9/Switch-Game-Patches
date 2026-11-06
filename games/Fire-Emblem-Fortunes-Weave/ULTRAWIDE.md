@@ -1,8 +1,15 @@
 # Fire Emblem: Fortune's Weave - 3440x1440 ultrawide fix
 
-Package **v1.0** combines the user-tested camera, UI/clipping and movie patches
+Package **v1.1** combines the user-tested camera, UI/clipping, movie, world-marker and 2D-effect patches
 into **one mod folder**. Target aspect ratio is **43:18 (3440x1440)**, commonly
 called 21:9. This is not a universal patch for other ultrawide ratios.
+
+## Changes in v1.1
+
+- Corrects floating world/NPC marker positions as the camera moves.
+- Corrects 2D menu-effect projection and clips matching effects to the centred 16:9 UI area.
+- Retains the previous camera, HUD, list clipping and movie corrections.
+- Replace v1.0 and all World-UI / UI-Effects test folders; enable only this ultrawide mod.
 
 ## Included fixes
 
@@ -23,7 +30,7 @@ Integer viewport rounding can cause a subpixel/one-pixel difference.
 | Game version | 1.1.0 |
 | Title ID | `04007EF01F8AE000` |
 | Main Build ID, trailing zeros omitted | `DB93B0125F4850601D61C3EDDE012F8EB2ECFE77` |
-| Package version | 1.0 |
+| Package version | 1.1 |
 | Output aspect | 3440x1440 / 43:18 |
 
 Other game updates need a matching patch. Resolution scaling does not change
@@ -31,18 +38,18 @@ the intended output aspect, but not every scaling/emulator setting is tested.
 
 ## Download and install
 
-1. Download [Fire-Emblem-Fortunes-Weave-Ultrawide-3440x1440-v1.0.zip](https://github.com/Kompas9/Switch-Game-Patches/raw/refs/heads/main/downloads/Fire-Emblem-Fortunes-Weave-Ultrawide-3440x1440-v1.0.zip).
+1. Download [Fire-Emblem-Fortunes-Weave-Ultrawide-3440x1440-v1.1.zip](https://github.com/Kompas9/Switch-Game-Patches/raw/refs/heads/main/downloads/Fire-Emblem-Fortunes-Weave-Ultrawide-3440x1440-v1.1.zip).
 2. Stop the game. **Disable/remove all earlier ultrawide test mods:**
    - `FE-Fortunes-Weave-3440x1440-TEST`
    - `FE-Fortunes-Weave-3440x1440-UI-TEST2`
    - `FE-Fortunes-Weave-3440x1440-UI-TEST3`
    - `FE-Fortunes-Weave-3440x1440-MOVIE-TEST1`
 3. Right-click Fire Emblem in Lichii -> **Open Mod Data Location**.
-4. Copy the entire **`Ultrawide-3440x1440-v1.0`** folder there and enable it in Properties / Add-Ons:
+4. Copy the entire **`Ultrawide-3440x1440-v1.1`** folder there and enable it in Properties / Add-Ons:
 
    ```text
    <game mod data location>/
-     Ultrawide-3440x1440-v1.0/
+     Ultrawide-3440x1440-v1.1/
        exefs/
          DB93B0125F4850601D61C3EDDE012F8EB2ECFE77.ips
    ```
@@ -51,11 +58,11 @@ the intended output aspect, but not every scaling/emulator setting is tested.
    **3440x1440 window/fullscreen output**. Restart the game.
 6. Keep emulator speed at **100%** and normal guest clock settings.
 
-**The FPS patch is separate:** `60FPS-v1.0` may remain enabled. This package
+**The FPS patch is separate:** `60FPS-v1.1` may remain enabled. This package
 neither includes nor overwrites its two instruction changes. No emulator
 rebuild is needed. Other aspect/FOV mods should be disabled.
 
-The log should show `Applying IPS patch from mod "Ultrawide-3440x1440-v1.0"`.
+The log should show `Applying IPS patch from mod "Ultrawide-3440x1440-v1.1"`.
 To uninstall, stop the game, disable/remove this folder, then restart. Select
 the normal 16:9 output setting if you no longer use the ultrawide camera patch.
 Original game files and emulator binaries are not replaced.
@@ -67,12 +74,14 @@ selection clipping, and movie proportions after testing the three components.
 Tests used the exact game build above with Lichii build 88 and/or the project's
 custom PGO/AV1 build. This is limited visual testing, not a full playthrough.
 
-The merged patched executable image was verified **byte-for-byte identical**
-to applying those three component patches separately. Offline ARM64 execution
-checks cover six camera cases, nine UI projection cases, nine clipping cases,
-and seven movie-clear/draw/viewport-restoration cases. The merged download has
-not been separately played through. Gameplay timing and movie decoding are
-unchanged by this package.
+The latest combined local test was reported working by the user. Offline ARM64
+checks include 91 world-coordinate cases and 18 scoped 2D-effect cases, in addition
+to earlier camera/UI/movie validation. This is limited visual testing, not a full
+playthrough. The release IPS is byte-identical to UI-Effects-TEST1.
+
+**Known issue:** torch illumination can flicker after loading free roam and become
+stable after a battle. This has been reported without the ultrawide mod too;
+its cause is still under investigation. This update does not claim a lighting fix.
 
 Some non-default camera/UI paths, unusual source-video shapes, fullscreen
 effects, input hitboxes and other emulator/hardware combinations may still
@@ -89,6 +98,6 @@ captured frames, logs, game assets, keys, firmware and saves are not distributed
 Located and tested during Kompas9's local Lichii / Fortune's Weave work.
 [Fl4sh9174's Three Houses ultrawide patch](https://github.com/Fl4sh9174/Switch-Emulator-Ultrawide-FPS-Mods)
 was inspected as a reference; its offsets were not copied. The Fortune's Weave
-camera, UI, scissor and movie hooks were located in the matching executable.
+camera, UI, scissor, movie, world-marker and 2D-effect hooks were located in the matching executable.
 Original documentation and tools are covered by the repository MIT license;
 game software retains its respective rights.

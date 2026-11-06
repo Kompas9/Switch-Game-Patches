@@ -1,25 +1,13 @@
-# v1.2 - Fire Emblem 3440x1440 ultrawide fix
+# v1.3 - Fire Emblem ultrawide v1.1
 
-Adds **Fire Emblem: Fortune's Weave ultrawide v1.0** for game **1.1.0**:
+Updates the 3440x1440 (43:18) patch for Fortune's Weave game version 1.1.0.
 
-- Wider 43:18 perspective camera for 3440x1440 output.
-- Centered 16:9 UI proportions and matching UI clipping correction.
-- Centered 16:9 movies with opaque-black side bars and viewport restoration.
+- Fixes floating NPC/world marker positions when moving the camera.
+- Corrects matching 2D menu effects and clips them to the centred 16:9 UI area.
+- Retains wide gameplay, normal UI proportions, list clipping and 16:9 movies.
 
-All three user-tested aspect components are combined into **one mod folder**.
-The merged patch image is byte-identical to applying those components separately.
-Limited user testing and offline execution checks are recorded; this is not a
-full-playthrough guarantee.
+Replace previous ultrawide mods and World-UI/UI-Effects tests with **Ultrawide-3440x1440-v1.1**. Keep the FPS mod separate. Use Stretch to Window and 3440x1440 output. No emulator rebuild is required.
 
-**Install:** disable/remove earlier camera TEST, UI-TEST2/UI-TEST3 and MOVIE-TEST1
-folders. Copy `Ultrawide-3440x1440-v1.0` into the game's Mod Data Location and
-enable it. Use **Stretch to Window**, 3440x1440 output and 100% emulator speed.
-The existing **60 FPS mod stays separate and can remain enabled**.
+The release patch is identical to the user-confirmed UI-Effects-TEST1 patch. Limited visual testing and offline ARM64 checks passed; no full-playthrough guarantee.
 
-**Title ID:** `04007EF01F8AE000`
-
-**Main Build ID:** `DB93B0125F4850601D61C3EDDE012F8EB2ECFE77`
-
-See the Fire Emblem ULTRAWIDE.md guide for supported settings and limitations.
-Fire Emblem's FPS package and Tomodachi's credited FPS package are unchanged.
-No emulator rebuild, executable dump, game assets, keys, firmware or saves included.
+Torch-light flicker after initial loading remains under investigation and has also been reported without ultrawide. This release does not include an emulator or lighting fix. FPS packages are unchanged.

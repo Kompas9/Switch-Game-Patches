@@ -9,7 +9,7 @@ def main():
     info=json.loads((root/'ultrawide-patch-records.json').read_text(encoding='utf-8'))
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--verify-dump',type=Path,help='Original decompressed memory-layout NSO; never modified.')
-    parser.add_argument('--output',type=Path,default=root/'Ultrawide-3440x1440-v1.0/exefs'/(info['build_id']+'.ips'))
+    parser.add_argument('--output',type=Path,default=root/'Ultrawide-3440x1440-v1.1/exefs'/(info['build_id']+'.ips'))
     args=parser.parse_args()
     if args.verify_dump:
         data=args.verify_dump.read_bytes()
