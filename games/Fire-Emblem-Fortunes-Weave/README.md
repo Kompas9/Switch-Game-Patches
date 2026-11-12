@@ -6,7 +6,7 @@ Build ID `DB93B0125F4850601D61C3EDDE012F8EB2ECFE77`.
 | Patch | Version | Details |
 | --- | --- | --- |
 | 60 FPS unlock + timing adjustment | v1.0 | [Instructions and limits](README-60FPS.md) |
-| 3440x1440 ultrawide fix | v1.1 | [Camera, UI, world markers, menu effects and 16:9 movies](ULTRAWIDE.md) |
+| 3440x1440 ultrawide fix | v1.2 | [Camera, UI, world markers, menu effects, stat charts and 16:9 movies](ULTRAWIDE.md) |
 
 Download ZIPs from the [main README](../../README.md#download-zips) or
 [Releases](https://github.com/Kompas9/Switch-Game-Patches/releases).
