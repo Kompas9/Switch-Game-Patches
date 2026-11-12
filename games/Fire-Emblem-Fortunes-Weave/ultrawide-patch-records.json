@@ -1,12 +1,12 @@
 {
-  "package_version": "1.1",
+  "package_version": "1.2",
   "target": "3440x1440 (43:18)",
   "title_id": "04007EF01F8AE000",
   "game_version": "1.1.0",
   "build_id": "DB93B0125F4850601D61C3EDDE012F8EB2ECFE77",
   "input_decompressed_nso_sha256": "0d3780b1cc70a48d46343dce05d26da535799faa096cf666e7841bc25fc6a20c",
   "format": "IPS32",
-  "patch_sha256": "c61aac1722e2ac2923c33f2dbf5097655dd2196f9d2f199940ccb9faf2c90163",
+  "patch_sha256": "431742cd60de45a39cd064962d219ef0c429c41ecb4e936575120a9424277b53",
   "components": [
     {
       "component": "camera",
@@ -30,12 +30,16 @@
     {
       "component": "2D menu-effect projection and clipping",
       "user_reported_working": true
+    },
+    {
+      "component": "unit-screen stat radar charts",
+      "user_reported_working": true
     }
   ],
-  "merged_record_count": 71,
+  "merged_record_count": 76,
   "no_overlapping_records": true,
   "fps_patch_included": false,
-  "testing": "User confirmed world-marker alignment and UI-Effects-TEST1 working. 91 world-coordinate and 18 scoped 2D-effect ARM64 checks passed. Limited visual testing; no full playthrough. Torch-light flicker reported across emulator versions, including without ultrawide; unresolved and not fixed by this patch.",
+  "testing": "User confirmed world-marker alignment and UI-Effects-TEST1 working. 91 world-coordinate and 18 scoped 2D-effect ARM64 checks passed. Stat-chart fix (v1.2) confirmed by the user in the recompiler port and in Lichii. Limited visual testing; no full playthrough. Torch-light flicker reported across emulator versions, including without ultrawide; unresolved and not fixed by this patch.",
   "full_playthrough_tested": false,
   "records": [
     {
@@ -392,6 +396,31 @@
       "address": "0xb76d9c",
       "original": "f44f54a9",
       "replacement": "faf0fd17"
+    },
+    {
+      "address": "0x17d90b0",
+      "original": "d75600b0",
+      "replacement": "95e9ff17"
+    },
+    {
+      "address": "0x17d3704",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "098ea8523001271ec9e7a752495f90723101271eea830091b21d0014"
+    },
+    {
+      "address": "0x17dade4",
+      "original": "0000000000000000",
+      "replacement": "0b0180522fe6ff17"
+    },
+    {
+      "address": "0x17d46a4",
+      "original": "00000000000000000000000000000000000000000000000000000000",
+      "replacement": "520140bd523a301e5242111f528500bc6b05007161ffff5432f5ff17"
+    },
+    {
+      "address": "0x17d1b84",
+      "original": "000000000000000000000000000000000000000000000000",
+      "replacement": "f21340bd523a301e5242111ff21300bd175700b0471d0014"
     }
   ]
 }
